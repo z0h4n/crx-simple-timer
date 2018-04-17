@@ -36,35 +36,3 @@
     ticker();
   });
 }());
-/*
-(function () {
-  const $timer = document.querySelector('#timer');
-  const $setter = document.querySelector('#setter > select');
-  let interval = null;
-
-  $setter.selectedIndex = window.localStorage.getItem('index') || 1;
-  let time = Number($setter.value);
-
-  $setter.addEventListener('change', function () {
-    time = Number(this.value);
-    window.localStorage.setItem('index', this.selectedIndex);
-    start();
-  });
-
-  function start() {
-    clearInterval(interval);
-
-    $timer.innerText = time;
-    interval = setInterval(function () {
-      time -= 1;
-      $timer.innerText = time;
-
-      if (time <= 0) {
-        clearInterval(interval);
-      }
-    }, 1000);
-  }
-
-  start();
-})();
-*/
